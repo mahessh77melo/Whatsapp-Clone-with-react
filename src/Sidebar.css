@@ -1,0 +1,51 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	border-right: 2px solid #ddd;
+	flex: 0.35; /* background-color: red; */
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.sidebar__header {
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	/* background-color: green; */
+}
+.sidebar__header--right {
+	display: flex;
+	padding: 0rem;
+	flex: 0.2;
+	margin-left: auto;
+	justify-content: space-between;
+}
+.sidebar__header--right .MuiSvgIcon-root {
+	font-size: 2rem !important;
+}
+.sidebar__input {
+	justify-self: stretch;
+	padding: 1.5rem 3rem;
+	border-radius: 50px;
+	border: none;
+	z-index: 9;
+	width: 90%;
+}
+.sidebar__input ::-webkit-input-placeholder {
+	font-family: inherit;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+.sidebar__search svg {
+	transform: translate(2.5rem, 25%);
+	fill: #777;
+	font-size: 2rem;
+	z-index: 10 !important;
+}
+.sidebar__chats {
+	flex: 1;
+	background-color: #fff;
+	margin-top: 1rem;
+}
